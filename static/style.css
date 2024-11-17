@@ -1,0 +1,97 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #3b6978, #204051);
+    color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    animation: backgroundShift 10s ease-in-out infinite alternate;
+}
+
+/* Container Styling */
+.container {
+    max-width: 600px;
+    padding: 20px;
+    background-color: #1b262c;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 255, 191, 0.3);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.container:hover {
+    box-shadow: 0 0 20px rgba(0, 255, 191, 0.5);
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    color: #e0aaff;
+    text-shadow: 0 0 8px #a29bfe;
+    animation: colorChange 8s linear infinite alternate;
+}
+
+/* Form Layout */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels */
+label {
+    margin-top: 15px;
+    color: #f0f8ff;
+}
+
+/* Input Fields */
+input {
+    padding: 12px;
+    margin-top: 8px;
+    border: 2px solid #38ada9;
+    border-radius: 5px;
+    background-color: #0a3d62;
+    color: #f7f7f7;
+    transition: border-color 0.4s ease-in-out;
+}
+
+input:focus {
+    border-color: #78e08f;
+    box-shadow: 0 0 8px #78e08f;
+}
+
+/* Button Styling */
+button {
+    margin-top: 20px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #e58e26;
+    color: #f7f7f7;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(229, 142, 38, 0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #fa983a;
+    transform: scale(1.05);
+}
+
+/* Animation Keyframes */
+
+/* Background color animation */
+@keyframes backgroundShift {
+    0% { background: linear-gradient(135deg, #3b6978, #204051); }
+    50% { background: linear-gradient(135deg, #204051, #0f3460); }
+    100% { background: linear-gradient(135deg, #0f3460, #3b6978); }
+}
+
+/* Header color animation */
+@keyframes colorChange {
+    0% { color: #e0aaff; }
+    50% { color: #ffcccc; }
+    100% { color: #c3aed6; }
+}
